@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Private sessions, relationship work, and retreats with Moin. For those in transition, grief, or seeking something older than self-improvement.">
+  <title>Offerings | Moin Therapy</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      max-width: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #F9F9F6;
+      color: #3E4250;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #F9F9F6;
+      padding: 20px 40px;
+      width: 100%;
+    }
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #3E4250;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    nav a:last-child {
+      font-weight: bold;
+      color: #00A676;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      align-items: flex-end;
+      text-align: right;
+    }
+    .mobile-nav a {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #3E4250;
+      text-decoration: none;
+    }
+    .mobile-nav a:last-child {
+      color: #00A676;
+      font-weight: bold;
+    }
+    .offerings-header {
+      background-color: #F7B7B3;
+      padding: 60px 20px 40px;
+      text-align: center;
+      width: 100%;
+    }
+    .offerings-header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .offerings-header p {
+      font-size: 0.95rem;
+      margin-top: 10px;
+      padding: 0 16px;
+    }
+    @media (max-width: 768px) {
+      .offerings-header p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+      }
+    }
+    section.offering {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .offering img {
+      width: 40px;
+      height: auto;
+      margin-bottom: 20px;
+      opacity: 0.65;
+    }
+    .offering h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .offering p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .poetic-block {
+      font-style: italic;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.9;
+      margin: 2rem 0;
+    }
+    .poetic-block span {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+    footer div:first-child {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .mobile-nav {
+        display: none;
+      }
+      .mobile-nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo-text">MOIN THERAPY</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="offerings.html">Offerings</a>
+      <a href="words.html">Words</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="offerings.html">Offerings</a>
+      <a href="words.html">Words</a>
+      <a href="#book">Book</a>
+    </div>
+  </header>
+
+  <div class="offerings-header">
+    <h1>Offerings</h1>
+    <p>All sessions currently offered online. In-person work in Playa del Carmen available upon request. Retreat inquiries welcome.</p>
+  </div>
+
+  <section class="offering">
+    <img src="glyph_1_thread_and_flame.svg" alt="Thread and Flame Glyph" />
+    <h2>Private Sessions</h2>
+    <p>One-on-one sessions that hold space for what matters.<br><br>
+    This isn’t coaching. This isn’t talk therapy either.<br><br>
+    It’s the kind of conversation most people never get to have—<br>
+    a quiet space to meet yourself honestly,<br>
+    and come back to what matters.<br><br>
+    We meet weekly, biweekly, or monthly—you set the pace.</p>
+    <div class="poetic-block">
+      <span>You’re in the middle of a transition, and don’t know what it means yet</span>
+      <span>You’re holding things that don’t belong to you, but can’t put them down</span>
+      <span>You’re ready for something real—without knowing what it is</span>
+    </div>
+  </section>
+
+  <section class="offering">
+    <img src="glyph_2_two_eyes_one_mirror.svg" alt="Two Eyes One Mirror Glyph" />
+    <h2>Relationship Work</h2>
+    <p>Because sometimes the mirror needs a mirror.<br><br>
+    Whether you come as a couple, friends, or two people sorting the space between you—this is not about fixing what’s broken. It’s about meeting what’s true.<br><br>
+    We’ll work with what’s spoken, unspoken, and felt between you.</p>
+    <div class="poetic-block">
+      <span>You’re navigating rupture, resentment, or return</span>
+      <span>You want to stay—but not in the same shape</span>
+      <span>You’re ready to listen differently</span>
+    </div>
+  </section>
+
+  <section class="offering">
+    <img src="glyph_3_circle_with_gate.svg" alt="Circle with Gate Glyph" />
+    <h2>Retreats</h2>
+    <p>Immersive space for reentry, reweaving, and rest.<br><br>
+    I offer private and small group retreats in Playa del Carmen. These are not programs. They’re designed moments of slowing down, deepening, and remembering.<br><br>
+    Some retreats are bespoke—designed with you. Others are seasonal and thematic.</p>
+    <div class="poetic-block">
+      <span>You feel the need to step out of your world, but not away from yourself</span>
+      <span>You’ve been carrying too much for too long</span>
+      <span>You want a space that doesn’t ask for performance—just presence</span>
+    </div>
+  </section>
+
+  <footer>
+    <div><img src="glyph_signature.svg" alt="Final Glyph" width="40"></div>
+    <div>Playa del Carmen · Online or In-Person</div>
+    <div style="margin-top: 10px; font-size: 0.8rem;">© 2025</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("mobileNav");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Therapy for people who sense something shifting. Online sessions or in-person in Playa del Carmen. Work that holds rupture, return, and rhythm.">
+  <title>About | Moin Therapy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #F9F9F6;
+      color: #3E4250;
+    }
+    a {
+      color: inherit;
+    }
+    header {
+      background-color: #F9F9F6;
+      padding: 20px 40px;
+    }
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #3E4250;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #3E4250;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    nav a:last-child {
+      font-weight: bold;
+      color: #00A676;
+    }
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      align-items: flex-end;
+      text-align: right;
+    }
+    .mobile-nav a {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #3E4250;
+      text-decoration: none;
+    }
+    .mobile-nav a:last-child {
+      color: #00A676;
+      font-weight: bold;
+    }
+    .about-header {
+      background-color: #F7B7B3;
+      padding: 60px 20px 40px;
+      text-align: center;
+      width: 100%;
+    }
+    .about-header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .about-body {
+      padding: 40px 20px 60px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .about-body img {
+      display: block;
+      max-width: 160px;
+      height: auto;
+      border-radius: 8px;
+      margin: 0 auto 40px;
+    }
+    .about-body p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .about-body .indented-list {
+      font-style: italic;
+      margin-left: 20px;
+    }
+    .about-body .indented-list li {
+      margin-bottom: 0.8rem;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+    footer div:first-child {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .mobile-nav {
+        display: none;
+      }
+      .mobile-nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="logo-text">MOIN THERAPY</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="offerings.html">Offerings</a>
+      <a href="words.html">Words</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="offerings.html">Offerings</a>
+      <a href="words.html">Words</a>
+      <a href="#book">Book</a>
+    </div>
+  </header>
+
+  <div class="about-header">
+    <h1>About</h1>
+  </div>
+  <div class="about-body">
+    <img src="about_portrait_watercolor.png" alt="Portrait Illustration">
+    <p>This isn’t new for me.</p>
+    <p>I was reading Buddhist texts before I understood half the words. Trying to meditate before I even knew what I was really seeking.</p>
+    <p>I trained as a therapist—but what I offer isn’t just therapy. It’s the braid I’ve spent my life living:</p>
+    <ul class="indented-list">
+      <li>Grief and myth.</li>
+      <li>Pop music and prayer.</li>
+      <li>Gestalt and God.</li>
+      <li>Sexuality and sacredness, held in the same palm.</li>
+    </ul>
+    <p>We might talk about your breakup. Your workplace. Your childhood. But underneath, we’ll be touching something older:</p>
+    <ul class="indented-list">
+      <li>“Why am I here?”</li>
+      <li>“What is this moment trying to teach me?”</li>
+      <li>“What have I been carrying that was never mine?”</li>
+    </ul>
+    <p>I don’t offer answers. But I do offer a space where you can ask your real questions—the ones you’ve been circling without words.</p>
+    <p>Moin Subhani, Registered Psychotherapist (RP), Ontario<br>Practicing online and from Playa del Carmen</p>
+  </div>
+
+  <footer>
+    <div><img src="glyph_signature.svg" alt="Final Glyph" width="40"></div>
+    <div>Playa del Carmen · Online or In-Person</div>
+    <div style="margin-top: 10px; font-size: 0.8rem;">© 2025</div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("mobileNav");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
